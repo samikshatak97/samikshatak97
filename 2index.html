@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CI Marbles | Premium Marble & Granite</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+
+body{
+background:#000;
+color:white;
+}
+
+/* NAVBAR */
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#111;
+display:flex;
+justify-content:space-between;
+padding:15px 30px;
+z-index:1000;
+border-bottom:2px solid #d4af37;
+}
+nav h2{color:#d4af37}
+nav a{
+color:#d4af37;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+nav a:hover{color:white}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+url('https://images.unsplash.com/photo-1615874694520-474822394e73');
+background-size:cover;
+background-position:center;
+}
+.hero h1{
+font-size:55px;
+color:#d4af37;
+}
+.hero p{
+margin-top:15px;
+font-size:20px;
+}
+
+/* SECTION */
+section{
+padding:70px 20px;
+text-align:center;
+}
+
+.section-title{
+font-size:32px;
+color:#d4af37;
+margin-bottom:25px;
+}
+
+/* GALLERY */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+.card{
+background:#111;
+border:2px solid #d4af37;
+border-radius:12px;
+overflow:hidden;
+transition:0.3s;
+}
+.card:hover{
+transform:scale(1.03);
+}
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+.card h3{
+padding:12px;
+color:#d4af37;
+}
+
+/* ABOUT */
+.about{
+background:#1a0000;
+line-height:1.7;
+font-size:18px;
+}
+
+/* CONTACT */
+.contact{
+background:#111;
+}
+.contact p{
+margin:10px;
+font-size:18px;
+}
+
+/* FLOAT BUTTONS */
+.float-call{
+position:fixed;
+left:15px;
+bottom:20px;
+background:#d4af37;
+color:black;
+padding:12px 18px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.float-whatsapp{
+position:fixed;
+right:15px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:12px 18px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+background:#5a0000;
+padding:18px;
+text-align:center;
+margin-top:20px;
+color:#d4af37;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+.hero h1{font-size:32px}
+.hero p{font-size:16px}
+nav{flex-direction:column;align-items:center}
+nav a{margin:8px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<h2>CI MARBLES</h2>
+<div>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div>
+<h1>CI MARBLES</h1>
+<p>Luxury Indian Marble & Granite Flooring</p>
+</div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+<h2 class="section-title">Our Premium Flooring Collection</h2>
+
+<div class="gallery">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1615874694520-474822394e73">
+<h3>Makrana White Marble (India)</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+<h3>Indian Red Granite</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1582582621959-48d27397dc69">
+<h3>Black Granite Flooring</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf">
+<h3>Rajasthan Marble</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1616047006789-b7af5afb8c20">
+<h3>Indian Beige Marble</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da">
+<h3>Premium Granite Slabs</h3>
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+<h2 class="section-title">About CI Marbles</h2>
+<p>
+CI Marbles is a trusted name in marble and granite flooring,
+located at Purani Marble Mandi.  
+We specialize mainly in Indian marble and granite solutions
+for homes, villas, hotels, and commercial projects.  
+Our focus is quality, durability and timeless luxury flooring.
+</p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+<h2 class="section-title">Contact Us</h2>
+<p><b>📞 Phone:</b> 9414239885</p>
+<p><b>📧 Email:</b> jayk6492@gmail.com</p>
+<p><b>📍 Address:</b> Purani Marble Mandi</p>
+</section>
+
+<!-- FLOAT BUTTONS -->
+<a class="float-call" href="tel:9414239885">📞 Call Now</a>
+<a class="float-whatsapp" href="https://wa.me/919414239885">WhatsApp</a>
+
+<!-- FOOTER -->
+<footer>
+© 2026 CI Marbles | Premium Flooring Solutions
+</footer>
+
+</body>
+</html>
